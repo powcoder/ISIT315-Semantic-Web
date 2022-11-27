@@ -1,0 +1,2 @@
+PREFIX : <http://example.org/book/>
+CONSTRUCT WHERE { ?book :price ?price ; :sold ?sold . } 

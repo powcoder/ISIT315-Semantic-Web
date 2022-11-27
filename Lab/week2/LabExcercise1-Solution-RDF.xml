@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ns0="http://dig.isi.edu/"
+         xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+  <rdf:Description rdf:about="http://dig.isi.edu/John">
+    <rdf:type rdf:resource="http://dig.isi.edu/Man"/>
+    <ns0:name>John</ns0:name>
+    <ns0:hasSpouse rdf:resource="http://dig.isi.edu/Mary"/>
+  </rdf:Description>
+
+  <ns0:Woman rdf:about="http://dig.isi.edu/Mary">
+    <ns0:name>Mary</ns0:name>
+    <ns0:hasSpouse rdf:resource="http://dig.isi.edu/John"/>
+  </ns0:Woman>
+
+  <ns0:Man rdf:about="http://dig.isi.edu/John_jr">
+    <ns0:name>John Jr.</ns0:name>
+    <ns0:hasParent rdf:resource="http://dig.isi.edu/John"/>
+    <ns0:hasParent rdf:resource="http://dig.isi.edu/Mary"/>
+  </ns0:Man>
+
+  <owl:Class rdf:about="http://dig.isi.edu/Time_Span">
+  </owl:Class>
+
+  <ns0:Activity rdf:about="http://dig.isi.edu/event">
+    <ns0:has_time_span>
+      <ns0:Time_Span>
+        <ns0:at_some_time_within_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-01-12</ns0:at_some_time_within_date>
+      </ns0:Time_Span>
+    </ns0:has_time_span>
+  </ns0:Activity>
+
+  <ns0:Person rdf:about="http://dig.isi.edu/u129u-klejkajo-2309124u-sajfl">
+    <ns0:name>John Doe</ns0:name>
+  </ns0:Person>
+</rdf:RDF>
